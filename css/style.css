@@ -1,0 +1,96 @@
+*::after,
+
+*::before{
+     box-sizing: border-box;
+        }
+      
+html{
+  height: 100%;
+}        
+body{
+  min-height:100%;
+  background-color: darkcyan;
+}
+
+.container{
+    padding: 0;
+    margin:2px;
+    background-color: #EEE;
+    display: flex;
+    flex-wrap: wrap;
+       
+}        
+
+.img{
+    background-color: #EEE;
+    padding: 8px;
+}
+ 
+.nombre{
+    flex: 1;
+    background-color: #EEE;
+    padding: 20px 20px 20px 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: left;
+  
+}
+
+.social-bar{
+    right: 0;
+    top: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: .7rem ;
+    display: flex;
+    transition: .5s;
+  }
+
+  .icon-facebook2{
+    background: #2E406E;
+  }
+
+  .icon-instagram{
+    background: #3F60A5;
+  }
+
+  .icon-linkedin{
+    background: #2E406E;
+  }
+
+  .icon:first-child{
+    border-radius: 1rem 0 0;
+  }
+
+  .icon:last-child{
+    border-radius: 0 0 1rem;
+  }
+
+  .icon.hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0.42);
+  }
+
+  /* Framework Bootstrap 5.3.0 */
+.carousel-item{    
+  margin: 1px;
+    background-image: url(https://images5.alphacoders.com/353/353018.jpg);
+    /*  La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+     /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+    background-position: center center;
+     /* Para que la imagen de fondo no se repita */
+     background-repeat: no-repeat;
+     /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;                      
+  }
